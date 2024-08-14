@@ -6,8 +6,7 @@
 // Sets default values
 AEnemyAi::AEnemyAi()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
-	PrimaryActorTick.bCanEverTick = true;
+ 
 	EnemyCharacter = CreateDefaultSubobject<UActorComponent>(TEXT("Enemy"));
 	SetRootComponent(EnemyCharacter);
 	CollisionCapsule = CreateDefaultSubobject<UCapsuleComponent>(TEXT("CollisionCapsule"));
